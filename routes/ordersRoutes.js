@@ -8,7 +8,7 @@ const {
   updateOrderStatus
 } = require("../controllers/ordersController");
 
-router.route("/").post(auth, admin, placeOrder).get(auth, admin, getOrders);
+router.route("/").post(auth, placeOrder).get(auth, admin, getOrders);
 router.patch(
   "/:id/status", auth, admin,
   updateOrderStatus
