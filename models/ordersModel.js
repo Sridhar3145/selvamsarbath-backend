@@ -44,7 +44,7 @@ const orderSchema = new mongoose.Schema(
 
     status: {
       type: String,
-      default: "Placed",
+      default: "Pending Payment",
     },
   },
   { timestamps: true }
